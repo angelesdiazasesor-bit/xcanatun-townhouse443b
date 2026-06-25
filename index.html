@@ -43,7 +43,9 @@ nav a:hover{opacity:1}
 .hero-arrow:hover{background:rgba(13,74,69,0.9)}
 .hero-prev{left:20px}
 .hero-next{right:20px}
-.slide-dots{position:absolute;bottom:22px;right:40px;display:flex;gap:8px}
+<button class="hero-arrow hero-prev" onclick="go(cur-1)">&#8592;</button>
+<button class="hero-arrow hero-next" onclick="go(cur+1)">&#8594;</button>
+<div class="slide-dots" id="slideDots"></div>
 .dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;border:none;transition:background .3s,transform .3s;padding:0}
 .dot.active{background:var(--arena);transform:scale(1.4)}
 .stats-bar{background:var(--verde);padding:22px 56px;display:grid;grid-template-columns:repeat(6,1fr);gap:0}
